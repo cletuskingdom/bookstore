@@ -16,6 +16,7 @@
 
                     {{ __('You are logged in!') }}
                     <form method="POST" action="{{ route('upload_book') }}">
+                        @csrf
                         <div>
                             <input type="text" name="name" placeholder="Enter book name">
                         </div>
