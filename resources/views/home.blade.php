@@ -15,6 +15,21 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <form method="POST" action="{{ route('upload_book') }}">
+                        <div>
+                            <input type="text" name="name" placeholder="Enter book name">
+                        </div>
+
+                        <div>
+                            <textarea name="description"></textarea>
+                        </div>
+
+                        <div>
+                            <input type="file" name="book_cover">
+                        </div>
+
+                        <button type="submit">Upload</button>
+                    </form>
                 </div>
             </div>
         </div>
