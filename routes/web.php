@@ -17,11 +17,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/home', function(Request $request){
+    DB::table('books')->insert([
+        'name' => $request->input('name'),
+        'description' => $request->input('description'),
+        'user_id' => 1,
+        'book_cover' => "animal"
+    ]);
+
     $name = $request->input('name');
     $description = $request->input('description');
     return "The name of the Book is ".$name. "<br> The description of the Book is ".$description;
