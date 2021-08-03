@@ -15,7 +15,7 @@
                     @endif
 
                     {{ __('You are logged in!') }}
-                    <form method="POST" action="{{ route('upload_book') }}">
+                    <form method="POST" action="{{ route('upload_book') }}"  enctype="multipart/form-data">
                         @csrf
                         <div>
                             <input type="text" name="name" placeholder="Enter book name">
