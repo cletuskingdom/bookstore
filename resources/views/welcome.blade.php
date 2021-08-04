@@ -19,13 +19,7 @@
         </div>
     </div>
 
-    <div class="container py-5 text-center">
-        <div class="py-5">
-            <h1 class="pt-5">Welcome to {{ config('app.name') }}</h1>   
-        </div>
-    </div>
-
-    <section>
+    <section class="py-5">
         <div class="pt-2 container">
           <div class="row" id="divReturnData">
             <aside class="col-md-3 text-center mb-5">
