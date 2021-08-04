@@ -24,17 +24,14 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/home', function(Request $request){
-    $book_cover = $request->file('book_cover')->store('book_covers');
-    return $book_cover;
+    $book_cover_path = $request->file('book_cover')->store('book_covers');
 
-    // DB::table('books')->insert([
-    //     'name' => $request->input('name'),
-    //     'description' => $request->input('description'),
-    //     'user_id' => 1,
-    //     'book_cover' => "animal"
-    // ]);
-
-    // $name = $request->input('name');
-    // $description = $request->input('description');
-    // return "The name of the Book is ".$name. "<br> The description of the Book is ".$description;
+    DB::table('books')->insert([
+        'name' => $request->input('name'),
+        'description' => $request->input('description'),
+        'user_id' => Auth::id(),
+        'book_cover' => $book_cover_path
+    ]);
+    
+    return redirect()->back()->with('status', 'Book uploaded successfully!');;
 })->name('upload_book');

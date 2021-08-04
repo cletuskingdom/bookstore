@@ -8,13 +8,12 @@
                     <div class="card-header">{{ __('Dashboard') }}</div>
 
                     <div class="card-body">
-                        @if (session('status'))
+                       <!--  @if (session('status'))
                             <div class="alert alert-success" role="alert">
                                 {{ session('status') }}
                             </div>
-                        @endif
+                        @endif -->
 
-                        {{ __('You are logged in!') }}
                         <form method="POST" action="{{ route('upload_book') }}"  enctype="multipart/form-data">
                             @csrf
                             <div>
@@ -29,7 +28,12 @@
                                 <input type="file" name="book_cover">
                             </div>
 
-                            <button type="submit">Upload</button>
+                            <button type="submit"> Upload </button>
+                            @if (session('status'))
+                                <div class="alert alert-success mt-3">
+                                    {{ session('status') }}
+                                </div>
+                            @endif
                         </form>
                     </div>
                 </div>
