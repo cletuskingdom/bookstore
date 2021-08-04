@@ -10002,3 +10002,21 @@ h3 {
     border-color: #dee2e6;
   }
 }
+
+#title {
+  padding: 30px 0;
+  background-image: linear-gradient(rgba(160, 231, 229, 0.5), rgba(160, 231, 229, 0.5)), url(/imgs/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh auto;
+}
+
+#title h1 {
+  font-size: 70px !important;
+  padding-top: 60px;
+}

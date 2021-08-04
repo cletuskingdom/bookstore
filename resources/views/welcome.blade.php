@@ -1,6 +1,43 @@
 @extends('layouts.app')
 
 @section('content')
+    <div id="title">
+        <div class="container py-5">
+            <div class="py-3">
+                @if (session()->has('message'))
+                    <div class="alert alert-danger">
+                        {{ session('message') }}
+                    </div>
+                @endif
+                
+                <h1 class="text-center pt-5">24/7 ACCESS TO TUTORS</h1>
+                
+                <p class="text-center pb-5">
+                    "Give your child access to qualified tutor 7 days a week, 365 days a year."
+                </p>
+
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <a href="" class="btn btn-warning btn-block">Parents</a>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <a href="" class="btn btn-warning btn-block">Schools</a>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <button class="btn btn-warning btn-block"
+                            data-toggle="modal" data-target="#myModal">Students</button>
+                    </div>
+
+                    <div class="col-md-3 mb-4">
+                        <button class="btn btn-warning btn-block" disabled="disabled">Download</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container py-5 text-center">
         <div class="py-5">
             <h1 class="pt-5">Welcome to {{ config('app.name') }}</h1>   
@@ -301,7 +338,7 @@
                             <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-3 mb-5">
                         <div class="views text-center">
                             <!-- Book Image -->
