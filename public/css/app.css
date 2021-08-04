@@ -10005,7 +10005,7 @@ h3 {
 
 #title {
   padding: 30px 0;
-  background-image: linear-gradient(rgba(160, 231, 229, 0.5), rgba(160, 231, 229, 0.5)), url(/imgs/background.jpg);
+  background-image: linear-gradient(rgba(52, 57, 65, 0.5), rgba(52, 57, 65, 0.5)), url(/imgs/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -10019,4 +10019,11 @@ h3 {
 #title h1 {
   font-size: 70px !important;
   padding-top: 60px;
+}
+
+.bgColor{
+  background-color: #C6A456 !important;
+}
+.txtColor{
+  color: #C6A456 !important;
 }

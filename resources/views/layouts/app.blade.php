@@ -114,13 +114,13 @@
 
                             <ul class="navbar-nav ml-auto pt-2">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ url('/') }}">
+                                    <a class="nav-link txtColor" href="{{ url('/') }}">
                                         Home
                                     </a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('How it works') }}</a>
+                                    <a class="nav-link txtColor" href="">{{ __('How it works') }}</a>
                                 </li>
                             </ul>
                         </div>
@@ -131,25 +131,19 @@
                             <article class="pt-2">
                                 
                                 <ul class="navbar-nav ml-auto pt-2">
-                                    <li class="nav-item">
+                                    <li class="nav-item txtColor">
                                         <i class="fa fa-map-marker pr-2"></i>
                                         7 factory Road Aba, Abia State, Nigeria.
                                     </li>                                
 
                                     <li class="nav-item">
-                                        <a href="tel:07063964065" class="nav-link"><i class="fa fa-phone pr-2" aria-hidden="true"></i> Call Now - 07063964065</a>
+                                        <a href="tel:07063964065" class="nav-link txtColor"><i class="fa fa-phone pr-2" aria-hidden="true"></i> Call Now - 07063964065</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a href="tel:07063964065" class="nav-link"><i class="fa fa-phone pr-2" aria-hidden="true"></i> Call Now - 07063964065</a>
+                                        <a href="tel:07063964065" class="nav-link txtColor"><i class="fa fa-phone pr-2" aria-hidden="true"></i> Call Now - 07063964065</a>
                                     </li>    
                                 </ul>
-
-                                <div class="nav justify-content-center">
-                                    <a href="" class="nav-link" target="_blank"><i class="fab fa-facebook pr-2" aria-hidden="true"></i> </a>
-                                    <a href="" class="nav-link" target="_blank"><i class="fab fa-instagram pr-2" aria-hidden="true"></i> </a>
-                                    <a href="" class="nav-link" target="_blank"><i class="fab fa-twitter pr-2" aria-hidden="true"></i> </a>
-                                </div>
                             </article>
                         </div>
                     </div>
@@ -160,13 +154,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 pt-3">
-                            <p> <b>{{ config('app.name') }}.</b> &#169; Copyright <?=date('Y')?> </p>
+                            <p> <b class="txtColor">{{ config('app.name') }}.</b> &#169; Copyright <?=date('Y')?> </p>
                         </div>
     
                         <div class="col-md-6 pt-2">
                             <div class="d-flex justify-content-around">
-                                <a href="" class="nav-link">Terms and conditions</a>
-                                <a href="" class="nav-link">Privacy policy</a>
+                                <a href="" class="nav-link txtColor">Terms and conditions</a>
+                                <a href="" class="nav-link txtColor">Privacy policy</a>
                             </div>
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div id="title">
+    <div id="title" class="shadow-lg">
         <div class="container py-5">
             <div class="py-3">
                 @if (session()->has('message'))
@@ -10,9 +10,9 @@
                     </div>
                 @endif
                 
-                <h1 class="text-center pt-5">24/7 ACCESS TO BOOKS</h1>
+                <h1 class="text-center text-light pt-5">24/7 ACCESS TO BOOKS</h1>
                 
-                <p class="text-center pb-5">
+                <p class="text-center text-light pb-5">
                     "Get access to quality books 7 days a week, 365 days a year."
                 </p>
             </div>
@@ -76,7 +76,7 @@
                         <hr>
 
                         <div class="text-center">
-                            <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
+                            <a href="/bookDetails/book_id" class="btn btn-sm bgColor">More Details</a>
                         </div>
                     </div>
 
@@ -115,7 +115,7 @@
                         <hr>
 
                         <div class="text-center">
-                            <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
+                            <a href="/bookDetails/book_id" class="btn btn-sm bgColor">More Details</a>
                         </div>
                     </div>
 
@@ -154,7 +154,7 @@
                         <hr>
 
                         <div class="text-center">
-                            <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
+                            <a href="/bookDetails/book_id" class="btn btn-sm bgColor">More Details</a>
                         </div>
                     </div>
 
@@ -193,7 +193,7 @@
                         <hr>
 
                         <div class="text-center">
-                            <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
+                            <a href="/bookDetails/book_id" class="btn btn-sm bgColor">More Details</a>
                         </div>
                     </div>
 
@@ -232,7 +232,7 @@
                         <hr>
 
                         <div class="text-center">
-                            <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
+                            <a href="/bookDetails/book_id" class="btn btn-sm bgColor">More Details</a>
                         </div>
                     </div>
 
@@ -271,7 +271,7 @@
                         <hr>
 
                         <div class="text-center">
-                            <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
+                            <a href="/bookDetails/book_id" class="btn btn-sm bgColor">More Details</a>
                         </div>
                     </div>
 
@@ -310,7 +310,7 @@
                         <hr>
 
                         <div class="text-center">
-                            <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
+                            <a href="/bookDetails/book_id" class="btn btn-sm bgColor">More Details</a>
                         </div>
                     </div>
 
@@ -349,7 +349,7 @@
                         <hr>
 
                         <div class="text-center">
-                            <a href="/bookDetails/book_id" class="btn btn-sm btn-warning">More Details</a>
+                            <a href="/bookDetails/book_id" class="btn btn-sm bgColor">More Details</a>
                         </div>
                     </div>
                 </div>
