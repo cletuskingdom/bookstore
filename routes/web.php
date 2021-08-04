@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,14 +24,17 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::post('/home', function(Request $request){
-    DB::table('books')->insert([
-        'name' => $request->input('name'),
-        'description' => $request->input('description'),
-        'user_id' => 1,
-        'book_cover' => "animal"
-    ]);
+    $book_cover = $request->file('book_cover')->store('book_covers');
+    return $book_cover;
 
-    $name = $request->input('name');
-    $description = $request->input('description');
-    return "The name of the Book is ".$name. "<br> The description of the Book is ".$description;
+    // DB::table('books')->insert([
+    //     'name' => $request->input('name'),
+    //     'description' => $request->input('description'),
+    //     'user_id' => 1,
+    //     'book_cover' => "animal"
+    // ]);
+
+    // $name = $request->input('name');
+    // $description = $request->input('description');
+    // return "The name of the Book is ".$name. "<br> The description of the Book is ".$description;
 })->name('upload_book');
