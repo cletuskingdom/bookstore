@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm fixed-top scrolling-navbar">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{url('storage/logo.png')}}" alt="{{ config('app.name') }}" class="img-fluid" id="logo">
+                    <img src="{{ asset('imgs/logo.png') }}" alt="{{ config('app.name') }}" class="img-fluid" id="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
