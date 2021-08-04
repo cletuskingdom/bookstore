@@ -10,30 +10,11 @@
                     </div>
                 @endif
                 
-                <h1 class="text-center pt-5">24/7 ACCESS TO TUTORS</h1>
+                <h1 class="text-center pt-5">24/7 ACCESS TO BOOKS</h1>
                 
                 <p class="text-center pb-5">
-                    "Give your child access to qualified tutor 7 days a week, 365 days a year."
+                    "Get access to quality books 7 days a week, 365 days a year."
                 </p>
-
-                <div class="row">
-                    <div class="col-md-3 mb-4">
-                        <a href="" class="btn btn-warning btn-block">Parents</a>
-                    </div>
-
-                    <div class="col-md-3 mb-4">
-                        <a href="" class="btn btn-warning btn-block">Schools</a>
-                    </div>
-
-                    <div class="col-md-3 mb-4">
-                        <button class="btn btn-warning btn-block"
-                            data-toggle="modal" data-target="#myModal">Students</button>
-                    </div>
-
-                    <div class="col-md-3 mb-4">
-                        <button class="btn btn-warning btn-block" disabled="disabled">Download</button>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
